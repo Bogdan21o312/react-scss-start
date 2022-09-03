@@ -1,0 +1,44 @@
+/*
+Error: Invalid CSS after "  $result: math": expected "}", was ".div($px, 16) +..."
+        on line 10 of Mixins.scss
+
+5:   //$result: math.div($px, $from) * 100%;
+6:   @return $result;
+7: }
+8: //REM
+9: @function rem($px) {
+10:   $result: math.div($px, 16) + rem;
+11:   @return $result;
+12: }
+13: //EM
+14: @function em($px, $current: 16) {
+15:   $result: math.div($px, $current) + em;
+
+Backtrace:
+Mixins.scss:10
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:272:in `function_directive'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  $result: math\": expected \"}\", was \".div($px, 16) +...\"\A         on line 10 of Mixins.scss\A \A 5:   //$result: math.div($px, $from) * 100%;\A 6:   @return $result;\A 7: }\A 8: //REM\A 9: @function rem($px) {\A 10:   $result: math.div($px, 16) + rem;\A 11:   @return $result;\A 12: }\A 13: //EM\A 14: @function em($px, $current: 16) {\A 15:   $result: math.div($px, $current) + em;"; }

@@ -1,0 +1,107 @@
+/*
+Error: Invalid CSS after "...ing: 0 rem(math": expected ")", was ".div($container..."
+        on line 105 of ../Style.scss
+        from line 3 of Main.module.scss
+
+100:       max-width: rem($maxWidthContainer);
+101:       box-sizing: content-box;
+102:       margin: 0 auto;
+103:     }
+104:     @if ($containerPadding>0) {
+105:       padding: 0 rem(math.div($containerPadding, 2));
+106:     }
+107:   }
+108: } @else {
+109:   // By break points
+110:   [class*="__container"] {
+
+Backtrace:
+../Style.scss:105
+Main.module.scss:3
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:862:in `assert_tok'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:644:in `funcall'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:531:in `css_min_max'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:507:in `ident'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_not'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_div'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_minus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_plus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `times_div_or_mod'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `plus_or_minus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `relational'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `eq_or_neq'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `and_expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `or_expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:484:in `space'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:422:in `interpolation'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:343:in `expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:853:in `assert_expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1164:in `sass_script'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1002:in `value!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:807:in `block in try_declaration'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:331:in `if_directive'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:331:in `if_directive'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ing: 0 rem(math\": expected \")\", was \".div($container...\"\A         on line 105 of ../Style.scss\A         from line 3 of Main.module.scss\A \A 100:       max-width: rem($maxWidthContainer);\A 101:       box-sizing: content-box;\A 102:       margin: 0 auto;\A 103:     }\A 104:     @if ($containerPadding>0) {\A 105:       padding: 0 rem(math.div($containerPadding, 2));\A 106:     }\A 107:   }\A 108: } @else {\A 109:   // By break points\A 110:   [class*=\"__container\"] {"; }

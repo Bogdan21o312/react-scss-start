@@ -1,0 +1,36 @@
+@use "sass:math";
+
+@import "../../../style/Style";
+
+.mainButton {
+  @include adaptiveValue("padding-top", 30, 10);
+  background-color: yellow;
+  color: $mainColor;
+  padding: rem(10) rem(10);
+  font-size: rem(40);
+  border-radius: rem(10);
+  line-height: math.div(22, 18);
+  transition: all 0.3s ease 0s;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $mainColor;
+      color: yellow;
+    }
+  }
+}
+
+.blackButton {
+  padding: rem(10) rem(10);
+  font-size: rem(40);
+  border-radius: rem(10);
+  line-height: math.div(22, 18);
+  transition: all 0.3s ease 0s;
+  background-color: $mainColor;
+  color: yellow;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: yellow;
+      color: $mainColor;
+    }
+  }
+}

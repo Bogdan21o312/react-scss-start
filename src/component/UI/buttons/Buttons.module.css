@@ -1,0 +1,48 @@
+/*
+Error: Invalid CSS after "...ne-height: math": expected ";", was ".div(22, 18);"
+        on line 12 of Buttons.module.scss
+
+7:   background-color: yellow;
+8:   color: $mainColor;
+9:   padding: rem(10) rem(10);
+10:   font-size: rem(40);
+11:   border-radius: rem(10);
+12:   line-height: math.div(22, 18);
+13:   transition: all 0.3s ease 0s;
+14:   @media (any-hover: hover) {
+15:     &:hover {
+16:       background-color: $mainColor;
+17:       color: yellow;
+
+Backtrace:
+Buttons.module.scss:12
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ne-height: math\": expected \";\", was \".div(22, 18);\"\A         on line 12 of Buttons.module.scss\A \A 7:   background-color: yellow;\A 8:   color: $mainColor;\A 9:   padding: rem(10) rem(10);\A 10:   font-size: rem(40);\A 11:   border-radius: rem(10);\A 12:   line-height: math.div(22, 18);\A 13:   transition: all 0.3s ease 0s;\A 14:   @media (any-hover: hover) {\A 15:     &:hover {\A 16:       background-color: $mainColor;\A 17:       color: yellow;"; }
