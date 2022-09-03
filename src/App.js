@@ -1,30 +1,25 @@
-import React, {useState} from "react";
-import MainButton from "./component/UI/buttons/MainButton";
-import BlackButton from "./component/UI/buttons/BlackButton";
+import logo from './logo.svg';
+import './App.scss';
 
 function App() {
-
-    const [likes, setLikes] = useState(0)
-
-    function incerment() {
-        setLikes(likes + 1)
-    }
-
-    function decrement() {
-        setLikes(likes - 1)
-    }
-
-    return (
-        <div className="wrapper">
-            <MainButton onClick={incerment}>
-                +
-            </MainButton>
-            <h1 style={{fontSize: 40  }}>{likes}</h1>
-            <BlackButton onClick={decrement}>
-                -
-            </BlackButton>
-        </div>
-    );
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
